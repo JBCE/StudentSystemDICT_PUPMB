@@ -1,0 +1,244 @@
+/*indext.html part sa login*/
+body.loginform{
+  background-image: url('LOGO/pupbackground.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+      background-size: cover; 
+}  
+.logintxt{
+  font-size: 40px;
+  font-weight: 800;
+  -webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #fff;
+}
+
+div.borderin{   
+    border: 3px solid rgb(214, 73, 73); 
+  background-color: #600;
+  min-height: 100vh;
+  min-width: 450px !important;
+  color: white;
+  float: right;
+
+ 
+  }   
+
+.box input[type="text"],.box input[type="password"]
+{
+  border: 0;
+  background-color: #ffffff;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding:14px 10px;
+  width:370px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  transition:0.25px;
+  text-align: left;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+  width:370px;
+  text-align: left;
+}
+.box input[type="button"]{
+  
+  border: 0;
+  background-color:rgb(39, 103, 146);
+  display: block;
+  margin: 20px auto;
+  text-align: left;
+  padding:14px 45px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  transition:0.25px;
+  cursor:pointer;
+  width: 370px;
+  text-align:  center;
+  
+}
+.box input[type="button"]:hover{
+  background: rgb(39, 103, 146);
+} 
+
+/* student html*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #600;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #600;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #600;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #600;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #600;
+  color: lightblue;
+}
+
+.swiper-navBtn{
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #ffffff;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #aec3f2;
+  opacity:1 ;
+}
+.swiper-pagination-bullet-active{
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+/* student info code*/
+body.studentinfo{
+  background-image: url('LOGO/pupbackground.png'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+      background-size: cover; 
+      font-family: 'Lato', sans-serif;
+}  
+
+.student-profile .card {
+  border-radius: 10px;
+}
+
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
+}
